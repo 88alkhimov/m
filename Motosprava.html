@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Author</title>
+<meta name="generator" content="WYSIWYG Web Builder 19 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/author.css" rel="stylesheet">
+<link href="css/Motosprava.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery.ui.effect.min.js"></script>
+<script src="js/wb.parallax.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wwb19.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var headerMenu_dropdownToggle = document.querySelectorAll('#headerMenu .dropdown-toggle');
+   headerMenu_dropdownToggle.forEach(item => 
+   {
+      var dropdown = new bootstrap.Dropdown(item, {popperConfig:{placement:item.getAttribute('data-bs-placement')}});
+   });
+   var headerMenu_dropdown = document.querySelectorAll('#headerMenu .dropdown');
+   headerMenu_dropdown.forEach(item => 
+   {
+      item.addEventListener('shown.bs.dropdown', function(e)
+      {
+         e.currentTarget.classList.add('show');
+      });
+      item.addEventListener('hidden.bs.dropdown', function(e)
+      {
+         e.currentTarget.classList.remove('show');
+      });
+   });
+});
+</script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#intro']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_intro').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   $('#wb_intro').parallax();
+   $("a[href*='#about']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_about').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrollabout()
+   {
+      var $obj = $("#wb_about");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollabout();
+   $(window).scroll(function(event)
+   {
+      onScrollabout();
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutExpo');
+   });
+   $("a[href*='#LayoutGrid3']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrollLayoutGrid3()
+   {
+      var $obj = $("#wb_LayoutGrid3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollLayoutGrid3();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid3();
+   });
+   $("a[href*='#LayoutGrid4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrollLayoutGrid4()
+   {
+      var $obj = $("#wb_LayoutGrid4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollLayoutGrid4();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid4();
+   });
+   $("a[href*='#LayoutGrid5']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid5').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrollLayoutGrid5()
+   {
+      var $obj = $("#wb_LayoutGrid5");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollLayoutGrid5();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid5();
+   });
+   $("a[href*='#LayoutGrid6']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid6').offset().top-88 }, 600, 'easeOutExpo');
+   });
+   function onScrollLayoutGrid6()
+   {
+      var $obj = $("#wb_LayoutGrid6");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollLayoutGrid6();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid6();
+   });
+   $("a[href*='#contact']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contact').offset().top }, 600, 'easeOutExpo');
+   });
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_intro').css('background-attachment', 'scroll');
+   }
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1" style="display:block;width:calc(100% - 40px);height:auto;z-index:0;">
+<a href="./Motosprava.html"><img src="images/cover.png" id="Image1" alt="" width="230" height="70"></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:block;width:100%;z-index:1;">
+<div id="headerMenu" class="headerMenu" style="width:100%;height:auto !important;">
+<div class="container">
+<div class="navbar-header">
+<button title="" type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".headerMenu-navbar-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="headerMenu-navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a href="#intro" class="nav-link">Головна</a>
+</li>
+<li class="nav-item">
+<a href="#about" class="nav-link">Про Нас</a>
+</li>
+<li class="nav-item">
+<a href="./Motosprava.html" class="nav-link">Запчастини</a>
+</li>
+<li class="nav-item">
+<a href="#contact" class="nav-link">Контакти</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_intro">
+<div id="intro">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_introHeading" style="display:block;width:100%;z-index:2;">
+<h2 id="introHeading">Ремонт Мототехніки</h2>
+</div>
+<div id="wb_introText">
+<p style="font-weight:bold;">Ми - ваші надійні партнери у світі мотоциклів. З нами ваш двоколісний друг завжди буде в ідеальному стані. Наші професіонали з великим досвідом готові взятися за ремонт та обслуговування будь-якої марки мотоцикла.</p>
+<p style="font-weight:bold;">Ремонт та технічне обслуговування: Наші кваліфіковані майстри проведуть компетентний аналіз стану вашого мотоцикла та виконають всі необхідні роботи для забезпечення його бездоганної роботи.</p>
+<p style="font-weight:bold;">Діагностика та регулювання: Використовуючи сучасне обладнання, ми проведемо діагностику систем та виконаємо регулювання, щоб забезпечити оптимальну продуктивність вашого мотоцикла.</p>
+<p style="font-weight:bold;">Заміна та установка запчастин: Ми гарантуємо наявність запчастин для будь-якої моделі мотоцикла та виконаємо їх заміну професійно та ефективно.</p>
+<p style="font-weight:bold;">&nbsp;</p>
+<p>YAMAHA • HONDA • SUZUKI • DUCATI • HARLEY DAVIDSON • KAWASAKI • BMW</p>
+<p>TRIUMPH • BENELLI • KTM • APRILIA • GUZZI</p>
+<p>HUSQVARNA • INDIAN MOTORCYCLE • MV AGUSTA • MOTO GUZZI • ROYAL ENFIELD • BIMOTA • VICTORY • ZERO MOTORCYCLES • NORTON • BROUGH SUPERIOR • ARCH MOTORCYCLE • MOTO MORINI • ERIK BUELL RACING • VESPA • DAFRA • BAJAJ • URAL • ENERGICA • HOREX • VYRUS • HYOSUNG • MZ • LAMBRETTA • MASH • SWM • BETA • CCM • MЬNCH • FANTIC MOTOR • NORTON MOTORCYCLES • CAGIVA • BROUGH SUPERIOR • DERBI • GAS GAS • GILERA • HUSABERG • LAVERDA • MALAGUTI • MONDIAL • OSSA • PEUGEOT • SHERCO • VOXAN • APRILIA • AJP • BUELL • CCW • HANWAY • MOTO MORINI • NORTON MOTORCYCLES • REGAL RAPTOR • SYM • ZONGSHEN</p>
+</div>
+<a id="introButton" href="https://www.google.com/search?hl=ru-UA&gl=ua&q=%D0%9C%D0%9E%D0%A2%D0%9E%D0%A1%D0%9F%D0%A0%D0%90%D0%92%D0%90,+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%BD%D1%8F,+13,+%D0%9A%D0%B8%D1%97%D0%B2,+02000&ludocid=13445326037003963153&lsig=AB86z5U5OM4aCnePyyB2TK0LH-H_#lrd=0x40d4cf85f77a0a15:0xba9764cb54ee8b11,1" target="_blank" style="display:inline-block;width:83px;height:35px;z-index:4;">Відгуки</a>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_introImage" style="display:block;width:100%;height:auto;z-index:5;">
+<img src="images/20220329_motorcycle-maintenance-checks-for-riding-safety.jpg" id="introImage" alt="" width="562" height="375">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_about">
+<div id="about">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_storesCard1" style="display:flex;width:calc(100% - 20px);z-index:6;" class="card">
+<div id="storesCard1-card-body">
+<div id="storesCard1-card-item0"><i class="fa fa-dollar"></i></div>
+<div id="storesCard1-card-item1">ЯКІСТЬ ВИЩА ЗА ЦІНУ</div>
+<div id="storesCard1-card-item2">Надаємо послуги з ремонту мототехніки всіх видів. Ми знаходимо підхід до будь-яких клієнтів, навіть до найскладніших. <br>Клієнт, що розуміє, завжди може розраховувати на знижку. Ми цінуємо свою репутацію, а тому: якість виконаних робіт для нас понад усе. Індивідуальний підхід до кожного клієнта.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_storesCard2" style="display:flex;width:calc(100% - 20px);z-index:7;" class="card">
+<div id="storesCard2-card-body">
+<div id="storesCard2-card-item0"><i class="fa fa-wrench"></i></div>
+<div id="storesCard2-card-item1">ЧИСТО ТА АКУРАТНО</div>
+<div id="storesCard2-card-item2">Надаємо послуги з ремонту мототехніки всіх видів. Ми знаходимо підхід до будь-яких клієнтів, навіть до найскладніших. <br>Клієнт, що розуміє, завжди може розраховувати на знижку. Ми цінуємо свою репутацію, а тому: якість виконаних робіт для нас понад усе. Індивідуальний підхід до кожного клієнта.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_storesCard3" style="display:flex;width:calc(100% - 20px);z-index:8;" class="card">
+<div id="storesCard3-card-body">
+<div id="storesCard3-card-item0"><i class="fa fa-truck"></i></div>
+<div id="storesCard3-card-item1">ЭВАКУАТОР</div>
+<div id="storesCard3-card-item2">Звільніть себе від непорозумінь і турбот – ми тут, щоб допомогти вам! Замовте наш евакуатор, і ми оперативно прибудемо в будь-яку точку Києва, щоб забрати ваш мотоцикл. Наша команда професіоналів візьме на себе всі турботи та відповідальність за транспортування вашого мотоциклов.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb19.png" alt="WYSIWYG Web Builder" style="position:absolute;left:0px;top:1274px;margin: 0;border-width:0;z-index:250" width="16" height="16"></a>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1-overlay"></div>
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text2">
+<p style="font-size:13px;line-height:16px;"><span style="font-size:16px;line-height:18px;font-weight:bold;">Знайдіть нас на карті: Київ. Вул. Городня 13</span></p>
+</div>
+<div id="wb_JavaScript1" style="display:block;width:100%;height:321px;z-index:10;">
+<iframe src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q=50.42606636010676,%2030.49691841788158+(%D0%9C%D0%9E%D0%A2%D0%9E%D0%A1%D0%9F%D0%A0%D0%90%D0%92%D0%90)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<select name="Select1" size="1" id="Select1" style="display:block;width: 100%;height:23px;z-index:11;">
+</select>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Image10" style="display:block;width:100%;height:auto;z-index:12;">
+<img src="images/Карбюратор.jpg" id="Image10" alt="" width="370" height="370">
+</div>
+<div id="wb_Card1" style="display:flex;width:calc(100% - 20px);z-index:13;" class="card">
+<div id="Card1-card-body">
+<div id="Card1-card-item0">НАЛАШТУВАННЯ КАРБЮРАТОРА</div>
+<div id="Card1-card-item1">Настройка карбюратора мотоцикла є надзвичайно важним етапом у забезпеченні ефективної роботи двигуна та збереженні його оптимальної продуктивності. Карбюратор відповідає за змішування пального і повітря в правильних пропорціях, що безпосередньо впливає на роботу двигуна та витрату пального.<br><br>Правильно налаштований карбюратор забезпечує економічне споживання пального та покращує динаміку руху мотоцикла. Під час налаштування важливо враховувати кліматичні умови, висоту місцевості та інші фактори, які можуть впливати на змішування пального.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Image4" style="display:block;width:100%;height:auto;z-index:14;">
+<img src="images/Мотосезон.jpg" id="Image4" alt="" width="370" height="370">
+</div>
+<div id="wb_Card8" style="display:flex;width:calc(100% - 20px);z-index:15;" class="card">
+<div id="Card8-card-body">
+<div id="Card8-card-item0">ПІДГОТОВКА ДО МОТО СЕЗОНУ</div>
+<div id="Card8-card-item1">Підготовка до мото сезону включає важливий етап налаштування карбюратора мотоцикла. Правильно налаштований карбюратор забезпечує ефективну роботу двигуна та оптимальне споживання пального. Це важливо для досягнення оптимальної продуктивності, підвищення динаміки та зменшення викидів. Необхідно враховувати вплив кліматичних умов та інших факторів на роботу карбюратора. Правильна настройка сприяє економії пального та довговічності двигуна, роблячи мотоцикл готовим до нового сезону та екологічно чистим засобом пересування.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Image5" style="display:block;width:100%;height:auto;z-index:16;">
+<img src="images/Шини.jpg" id="Image5" alt="" width="370" height="370">
+</div>
+<div id="wb_Card5" style="display:flex;width:calc(100% - 20px);z-index:17;" class="card">
+<div id="Card5-card-body">
+<div id="Card5-card-item0">ТИСК У ШИНАХ МОТОЦИКЛУ</div>
+<div id="Card5-card-item1">Тиск у шинах мотоцикла важливий для безпеки та продуктивності. Правильний тиск покращує керованість і тривалість служби шин. Перевірка тиску перед кожною поїздкою є важливою для уникнення проблем з гальмуванням та зносу. Оптимальний тиск залежить від типу шин і типу їзди. Постійна перевірка – гарантія безпеки, економії пального та довговічності шин, роблячи мотоцикл готовим до безпечної експлуатації. Збереження оптимального тиску у шинах мотоцикла не лише підвищує безпеку, але й сприяє економії пального та тривалому терміну служби шин, роблячи мотоцикл готовим до експлуатації.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Image6" style="display:block;width:100%;height:auto;z-index:18;">
+<img src="images/Масла.jpg" id="Image6" alt="" width="370" height="370">
+</div>
+<div id="wb_Card6" style="display:flex;width:calc(100% - 20px);z-index:19;" class="card">
+<div id="Card6-card-body">
+<div id="Card6-card-item0">ЗАМІНА МАСТИЛ І ГАЛЬМОВИЙ</div>
+<div id="Card6-card-item1">Заміна мастил і гальмової рідини є важливою процедурою для забезпечення ефективності і безпеки мотоцикла. Мастила забезпечують правильне змащення рухомих частин двигуна та інших важливих елементів, попереджаючи знос та підтримуючи оптимальну температуру роботи.<br><br>Гальмова рідина, у свою чергу, відповідає за правильну роботу гальмівної системи. Регулярна заміна рідини запобігає появі повітря в гальмівних системах та підтримує стабільність гальмування. Важливо дотримуватися рекомендацій виробників щодо типу мастила та гальмової рідини.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contact">
+<div id="contact-overlay"></div>
+<div id="contact">
+<div class="row">
+<div class="col-1">
+<div id="wb_contactIcon4" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:20;">
+<a href="https://www.youtube.com/@motospravagarage1220" target="_blank"><div id="contactIcon4"><i class="fa fa-youtube-play"></i></div></a>
+</div>
+<div id="wb_contactIcon3" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:21;">
+<a href="https://www.instagram.com/moto.sprava/" target="_blank"><div id="contactIcon3"><i class="fa fa-instagram"></i></div></a>
+</div>
+<div id="wb_contactIcon2" style="display:inline-block;width:30px;height:30px;text-align:center;z-index:22;">
+<a href="https://www.facebook.com/motosprava/" target="_blank"><div id="contactIcon2"><i class="fa fa-facebook"></i></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image2" style="display:block;width:calc(100% - 100px);height:auto;z-index:23;">
+<a href="./Motosprava.html"><img src="images/cover.png" id="Image2" alt="" width="270" height="82"></a>
+</div>
+<div id="wb_contactDescription">
+<p><span style="font-weight:bold;">Te</span><span style="font-weight:bold;">л. 063 825 7828 | 099 764 6893 | КИЇВ. ВУЛ.ГОРОДНЯ 13 ГРАФІК РОБОТИ: ПН. - ПТ. з 10:00 ДО 18:00</span></p>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_contactMenu" style="display:block;width:100%;z-index:25;">
+<ul id="contactMenu" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link" href="#intro" target="_self">Голова</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="#about" target="_self">Про&nbsp;Нас</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="#coffee" target="_self">Запчасти</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link" href="#contact" target="_self">Контакти</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
